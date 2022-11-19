@@ -57,12 +57,17 @@ const Home = () => {
                             src={PlanetTierra}
                             alt='Planet Terra galaxy link image'
                             className='pointer'
+                            width={30}
+                            height={30}
+                            layout='responsive'
                         />
                         <span className='text_señal'>About</span>
                          <Image
                             src={Señal}
                             alt='Pointer galaxy'
                             className='pointer señal'
+                            width={80}
+                            height={80}
                         /> 
                     </Link>
 
@@ -71,12 +76,17 @@ const Home = () => {
                             src={PlanetLava}
                             alt='Planet Lava galaxy link image'
                             className='pointer'
+                            width={50}
+                            height={50}
+                            layout='responsive'
                         />
                         <span className='text_señal'>Education</span>
                          <Image
                             src={Señal}
                             alt='Pointer galaxy'
                             className='pointer señal'
+                            width={80}
+                            height={80}
                         /> 
                     </Link>
 
@@ -85,12 +95,36 @@ const Home = () => {
                             src={PlanetIce}
                             alt='Planet Ice galaxy link image'
                             className='pointer'
+                            width={50}
+                            height={50}
+                            layout='responsive'
                         />
                         <span className='text_señal'>Projects</span>
                          <Image
                             src={Señal}
                             alt='Pointer galaxy'
                             className='pointer señal'
+                            width={80}
+                            height={80}
+                        /> 
+                    </Link>
+
+                    <Link href={'/Networks'} className={`${styles.home_link} ${styles.home_networks}`}>
+                        <Image
+                            src={PlanetNet}
+                            alt='Planet Networks galaxy link image'
+                            className='pointer'
+                            width={50}
+                            height={50}
+                            layout='responsive'
+                        />
+                        <span className='text_señal'>Networks</span>
+                         <Image
+                            src={Señal}
+                            alt='Pointer galaxy'
+                            className='pointer señal'
+                            width={80}
+                            height={80}
                         /> 
                     </Link>
                 </div>

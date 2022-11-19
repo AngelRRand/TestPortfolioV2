@@ -83,6 +83,10 @@
 .home_projects{
     grid-area: 7 / 6 / 8 / 7;
 }
+
+.home_networks{
+    grid-area: 18 / 4 / 19 / 5;
+}
 @keyframes motionT {
     0% {
         transform: translateX(0px);
@@ -177,13 +181,18 @@
 
 @media all and (max-width: 768px) {
 
-    .container_galaxy {
+    .galaxy_container {
         width: 95vw;
+        height: 100vh;
     }
-
+    .galaxy{
+        height: 100vh;
+    }
     .galaxy_grid {
         width: 95vw;
+        height: 100vh;
         grid-template-columns: repeat(10, 9.5vw);
+        grid-template-rows: repeat(30, 3.3333vh);
     }
 
     

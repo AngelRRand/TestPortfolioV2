@@ -52,7 +52,6 @@ img {
 
 .señal {
   position: absolute;
-  width: calc(13px + 5vw);
 }
 
 .app_overflow {
@@ -80,10 +79,9 @@ img {
   border: 2px solid var(--white);
 }
 
-@media all and (max-width: 768px) {
+/* @media all and (max-width: 768px) {
 
   .señal {
     position: absolute;
-    width: 8vh;
   }
-}
+} */
