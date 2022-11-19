@@ -5,7 +5,7 @@
     z-index: 10;
 }
 
-.container_galaxy {
+.galaxy_container {
     position: relative;
     object-fit: cover;
     top: 5vh;
@@ -32,7 +32,18 @@
     z-index: 20;
 }
 
-
+.galaxy_grid{
+    display: grid;
+    position: absolute;
+    width: 60vw;
+    height: 150vh;
+    margin: 5vh;
+    grid-template-columns: repeat(10, 6vw);
+    grid-template-rows: repeat(30, 5vh);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background: red;
+}
 
 
 @keyframes motionT {

@@ -1,12 +1,16 @@
+import PageLayoud from '../component/PageLayoud'
+import Stars from '../component/Stars'
 import Galaxy from '../assets/galaxy.png';
 import GalaxyT from '../assets/galaxyT.png';
 import GalaxyB from '../assets/galaxyB.png';
+import PlanetTierra from '../assets/Home/planetTierra.png'
+import PlanetLava from '../assets/Home/planetLava.png'
+import Planetice from '../assets/Home/planetIce.png'
+import PlanetNet from '../assets/Home/planetNet.png'
+import Señal from '../assets/Home/Señal.gif'
 
 import Link from 'next/link'
 import Image from 'next/image'
-
-import PageLayoud from '../component/PageLayoud'
-import Stars from '../component/Stars'
 
 import styles from '../styles/Home.module.css'
 
@@ -29,7 +33,7 @@ const Home = () => {
                     transition: { duration: 1.5, type: "spring" },
                 }}
             >
-                <div className={styles.container_galaxy}>
+                <div className={styles.galaxy_container}>
                     <Image
                         src={Galaxy}
                         alt='Home galaxy web'
@@ -45,6 +49,22 @@ const Home = () => {
                         alt='Home galaxy web animation botton'
                         className={`${styles.galaxy} ${styles.galaxyAnimationB}`}
                     />
+                </div>
+
+                <div className={styles.galaxy_grid}>
+                    <Link href={'/About'} className='container_señal grid_about'>
+                        <Image
+                            src={PlanetTierra}
+                            alt='Home galaxy web animation botton'
+                            className='pointer'
+                        />
+                        <span className='text_señal'>About</span>
+                         <Image
+                            src={Señal}
+                            alt='Home galaxy web animation botton'
+                            className='pointer señal'
+                        /> 
+                    </Link>
                 </div>
             </motion.section>
 
