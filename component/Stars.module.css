@@ -1,0 +1,8 @@
+.stars{
+    display: flex;
+    position: absolute;
+    overflow-y: hidden;
+    object-fit: cover;
+    height: auto;
+    z-index: 1;
+}

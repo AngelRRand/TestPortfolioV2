@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
-import { container } from '../interface/types'
 import styles from './PageLayoud.module.css'
+import { container } from '../interface/types'
 const PageLayoud: React.FC<container> = ({ children, title, styleContainer }) => {
     return (
         <>

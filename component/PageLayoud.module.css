@@ -7,3 +7,8 @@
 .container_Galaxy{
     position: relative;
 }
+.container_View{
+    position: relative;
+    width: 100vw;
+    z-index: 1;
+}
