@@ -5,7 +5,7 @@ import GalaxyT from '../assets/galaxyT.png';
 import GalaxyB from '../assets/galaxyB.png';
 import PlanetTierra from '../assets/Home/planetTierra.png'
 import PlanetLava from '../assets/Home/planetLava.png'
-import Planetice from '../assets/Home/planetIce.png'
+import PlanetIce from '../assets/Home/planetIce.png'
 import PlanetNet from '../assets/Home/planetNet.png'
 import Señal from '../assets/Home/Señal.gif'
 
@@ -59,6 +59,34 @@ const Home = () => {
                             className='pointer'
                         />
                         <span className='text_señal'>About</span>
+                         <Image
+                            src={Señal}
+                            alt='Pointer galaxy'
+                            className='pointer señal'
+                        /> 
+                    </Link>
+
+                    <Link href={'/Education'} className={`${styles.home_link} ${styles.home_education}`}>
+                        <Image
+                            src={PlanetLava}
+                            alt='Planet Lava galaxy link image'
+                            className='pointer'
+                        />
+                        <span className='text_señal'>Education</span>
+                         <Image
+                            src={Señal}
+                            alt='Pointer galaxy'
+                            className='pointer señal'
+                        /> 
+                    </Link>
+
+                    <Link href={'/Projects'} className={`${styles.home_link} ${styles.home_projects}`}>
+                        <Image
+                            src={PlanetIce}
+                            alt='Planet Ice galaxy link image'
+                            className='pointer'
+                        />
+                        <span className='text_señal'>Projects</span>
                          <Image
                             src={Señal}
                             alt='Pointer galaxy'

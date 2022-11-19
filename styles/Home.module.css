@@ -42,7 +42,6 @@
     grid-template-rows: repeat(30, 5vh);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    background: red;
 }
 
 .home_link{
@@ -58,7 +57,6 @@
 
 .home_link img:first-child {
     background: transparent;
-    width: 3.5rem;
     display: none;
 }
 
@@ -76,6 +74,14 @@
 
 .home_about{
     grid-area: 16 / 6 / 12 / 6;
+}
+
+.home_education{
+    grid-area: 21 / 3 / 22 / 4;
+}
+
+.home_projects{
+    grid-area: 7 / 6 / 8 / 7;
 }
 @keyframes motionT {
     0% {
