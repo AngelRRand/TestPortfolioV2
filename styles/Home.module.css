@@ -1,0 +1,145 @@
+.home {
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    z-index: 10;
+}
+
+.container_galaxy {
+    position: relative;
+    object-fit: cover;
+    top: 5vh;
+    width: 60vw;
+    height: 150vh;
+}
+
+.galaxy {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.galaxyAnimationT {
+    animation: motionT 3s linear infinite;
+    z-index: 20;
+}
+
+.galaxyAnimationB {
+    animation: motionB 3s linear infinite;
+    z-index: 20;
+}
+
+
+
+
+@keyframes motionT {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(1px);
+    }
+
+    20% {
+        transform: translateX(2px);
+    }
+
+    30% {
+        transform: translateX(3px);
+    }
+
+    40% {
+        transform: translateX(4px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    60% {
+        transform: translateX(4px);
+    }
+
+    70% {
+        transform: translateX(3px);
+    }
+
+    80% {
+        transform: translateX(2px);
+    }
+
+    90% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes motionB {
+    0% {
+        transform: translateX(0px);
+    }
+
+    10% {
+        transform: translateX(-1px);
+    }
+
+    20% {
+        transform: translateX(-2px);
+    }
+
+    30% {
+        transform: translateX(-3px);
+    }
+
+    40% {
+        transform: translateX(-4px);
+    }
+
+    50% {
+        transform: translateX(-5px);
+    }
+
+    60% {
+        transform: translateX(-4px);
+    }
+
+    70% {
+        transform: translateX(-3px);
+    }
+
+    80% {
+        transform: translateX(-2px);
+    }
+
+    90% {
+        transform: translateX(-1px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    .container_galaxy {
+        width: 95vw;
+    }
+
+    .grid_galaxy {
+        width: 95vw;
+        grid-template-columns: repeat(10, 9.5vw);
+    }
+
+    .señal {
+        position: absolute;
+        width: 8vh;
+    }
+}

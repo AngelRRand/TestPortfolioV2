@@ -22,14 +22,29 @@ const Home = () => {
             <Stars />
 
             <motion.section
+                className={styles.home}
                 initial={{ opacity: 0 }}
                 animate={{
                     opacity: 1,
                     transition: { duration: 1.5, type: "spring" },
                 }}
             >
-                <div className='container_galaxy'>
-                    
+                <div className={styles.container_galaxy}>
+                    <Image
+                        src={Galaxy}
+                        alt='Home galaxy web'
+                        className={styles.galaxy}
+                    />
+                    <Image
+                        src={GalaxyT}
+                        alt='Home galaxy web animation top'
+                        className={`${styles.galaxy} ${styles.galaxyAnimationT}`}
+                    />
+                    <Image
+                        src={GalaxyB}
+                        alt='Home galaxy web animation botton'
+                        className={`${styles.galaxy} ${styles.galaxyAnimationB}`}
+                    />
                 </div>
             </motion.section>
 

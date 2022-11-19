@@ -2,7 +2,7 @@
     position: absolute;
     overflow-y: hidden;
     object-fit: cover;
-    height: auto;
+    height: 200vh;
     width: 100vw;
     top: 0;
     right: 0;
