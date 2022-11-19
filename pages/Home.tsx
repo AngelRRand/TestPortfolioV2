@@ -7,10 +7,10 @@ const Home = () => {
         <PageLayoud
             title='Explore to Galaxy!'
             content='Home portfolio'
-            styleContainer='container_Space'
+            styleContainer='container_Galaxy'
 
         >
-            <Link href={'/'}><h1>/</h1></Link>
+            <Link href={'/'}><h1>volver</h1></Link>
         </PageLayoud>
     )
 }
