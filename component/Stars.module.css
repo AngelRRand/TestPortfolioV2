@@ -8,3 +8,9 @@
     right: 0;
     z-index: 1;
 }
+
+@media all and (max-width: 768px) {
+    .stars{
+        height: 250vh;
+    }
+}
