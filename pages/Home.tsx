@@ -52,16 +52,16 @@ const Home = () => {
                 </div>
 
                 <div className={styles.galaxy_grid}>
-                    <Link href={'/About'} className='container_señal grid_about'>
+                    <Link href={'/About'} className={`${styles.home_link} ${styles.home_about}`}>
                         <Image
                             src={PlanetTierra}
-                            alt='Home galaxy web animation botton'
+                            alt='Planet Terra galaxy link image'
                             className='pointer'
                         />
                         <span className='text_señal'>About</span>
                          <Image
                             src={Señal}
-                            alt='Home galaxy web animation botton'
+                            alt='Pointer galaxy'
                             className='pointer señal'
                         /> 
                     </Link>

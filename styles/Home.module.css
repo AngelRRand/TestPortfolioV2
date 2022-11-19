@@ -45,7 +45,38 @@
     background: red;
 }
 
+.home_link{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    background: transparent;
+    z-index: 99;
+}
 
+.home_link img:first-child {
+    background: transparent;
+    width: 3.5rem;
+    display: none;
+}
+
+.home_link:hover {
+    transform: scale(1.5);
+}
+
+.home_linkhover img {
+    display: none;
+}
+
+.home_link:hover img:first-child {
+    display: flex;
+}
+
+.home_about{
+    grid-area: 16 / 6 / 12 / 6;
+}
 @keyframes motionT {
     0% {
         transform: translateX(0px);
@@ -144,13 +175,10 @@
         width: 95vw;
     }
 
-    .grid_galaxy {
+    .galaxy_grid {
         width: 95vw;
         grid-template-columns: repeat(10, 9.5vw);
     }
 
-    .señal {
-        position: absolute;
-        width: 8vh;
-    }
+    
 }
