@@ -85,3 +85,10 @@ img {
     position: absolute;
   }
 } */
+.CAJA{
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  top: 0;
+}
