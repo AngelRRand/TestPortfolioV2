@@ -87,6 +87,14 @@
 .home_networks{
     grid-area: 18 / 4 / 19 / 5;
 }
+.planetNetGit{
+    display: none;
+    position: absolute;
+    top: 0
+}
+.home_networks:hover img:nth-child(2){
+    display: block;
+}
 @keyframes motionT {
     0% {
         transform: translateX(0px);

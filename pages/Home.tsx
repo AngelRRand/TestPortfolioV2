@@ -7,6 +7,7 @@ import PlanetTierra from '../assets/Home/planetTierra.png'
 import PlanetLava from '../assets/Home/planetLava.png'
 import PlanetIce from '../assets/Home/planetIce.png'
 import PlanetNet from '../assets/Home/planetNet.png'
+import PlanetNetGit from '../assets/Home/planetNetGit.png'
 import Señal from '../assets/Home/Señal.gif'
 
 import Link from 'next/link'
@@ -80,6 +81,7 @@ const Home = () => {
                             height={50}
                             layout='responsive'
                         />
+                        
                         <span className='text_señal'>Education</span>
                          <Image
                             src={Señal}
@@ -114,6 +116,14 @@ const Home = () => {
                             src={PlanetNet}
                             alt='Planet Networks galaxy link image'
                             className='pointer'
+                            width={50}
+                            height={50}
+                            layout='responsive'
+                        />
+                        <Image
+                            src={PlanetNetGit}
+                            alt='Planet Lava galaxy link image'
+                            className={`pointer ${styles.planetNetGit}`}
                             width={50}
                             height={50}
                             layout='responsive'
