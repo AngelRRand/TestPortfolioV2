@@ -13,6 +13,7 @@ const Stars = ({ }) => {
             src={StarsIMG}
             alt='Stars background web'
             className={styles.stars}
+            priority={true}
         />
 }
 

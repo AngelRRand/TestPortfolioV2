@@ -31,7 +31,7 @@ const Home = () => {
                 initial={{ opacity: 0 }}
                 animate={{
                     opacity: 1,
-                    transition: { duration: 1.5, type: "spring" },
+                    transition: { duration: 0.5, type: "spring" },
                 }}
             >
                 <div className={styles.galaxy_container}>
