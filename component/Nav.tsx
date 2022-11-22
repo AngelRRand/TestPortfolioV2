@@ -15,6 +15,15 @@ const Nav = () => {
         return (
             <header className='CAJA'>
                 <nav>NAV</nav>
+                <div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                </div>
             </header>
         )
     }
