@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { motion } from "framer-motion";
 import styles from './Nav.module.css';
 import Link from 'next/link'
@@ -9,8 +9,18 @@ const Nav = () => {
 
     const router = useRouter()
     let currentRouter = router.asPath
-    var url = '/'
+    var url = '/Home'
     
+
+    useEffect(() => {
+      if(currentRouter === '/About'){
+
+      }
+    
+    }, [currentRouter])
+    
+
+
     if(currentRouter === '/'){
         return <></>
     }else{
