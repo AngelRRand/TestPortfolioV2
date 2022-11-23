@@ -9,7 +9,7 @@ const Nav = () => {
 
     const router = useRouter()
     let currentRouter = router.asPath
-
+    var url = '/'
     
     if(currentRouter === '/'){
         return <></>
@@ -19,11 +19,7 @@ const Nav = () => {
                 <nav>NAV</nav>
                 <div>
                 <ul>
-                    <li> <Link>a</Link></li>
-                    <li> <Link>a</Link></li>
-                    <li> <Link>a</Link></li>
-                    <li> <Link>a</Link></li>
-                    <li> <Link>a</Link></li>
+                    <li> <Link href={url}><p>VAMOS A SALTAR</p></Link></li>
                 </ul>
                 </div>
             </header>
