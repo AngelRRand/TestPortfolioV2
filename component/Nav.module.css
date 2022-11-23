@@ -1,15 +1,18 @@
 .nav {
     position: fixed;
     top: 0;
+    left: 1vw;
     z-index: 100000;
     color: var(--white);
-    min-width: 20vw;
 }
 
 .nav h3{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 .nav a p{
     font-size: 1.5rem;
+    text-align: center;
+    margin-top: 3vh;
 }

@@ -27,9 +27,9 @@ const Nav = () => {
         return (
             <header>
                 <nav className={styles.nav}>
-                    <h3>MENU</h3>
+                    <h3 className='pointer'>MENU</h3>
                     <ul>
-                        <li> <Link href={'/Home'}><p>To Galaxy</p></Link></li>
+                        <li className='pointer'> <Link href={'/Home'}><p>To Galaxy</p></Link></li>
                         <li> <Link href={url}><p>Go to Planet</p></Link></li>
                     </ul>
                 </nav>
