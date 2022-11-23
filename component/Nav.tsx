@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from "framer-motion";
-import styles from './Nav.module.css';
+import ligthgreen from '../../assets/Nav/ligthgreen.gif';
+import ligthred from '../../assets/Nav/ligthred.gif';
+
 import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
+
+import styles from './Nav.module.css';
 
 const Nav = () => {
 
@@ -29,8 +33,8 @@ const Nav = () => {
                 <nav className={styles.nav}>
                     <h3 className='pointer'>MENU</h3>
                     <ul>
-                        <li className='pointer'> <Link href={'/Home'}><p>To Galaxy</p></Link></li>
-                        <li> <Link href={url}><p>Go to Planet</p></Link></li>
+                        <li className={styles.navLink}> <Link href={'/Home'}><p>To Galaxy</p></Link></li>
+                        <li className={styles.navLink}> <Link href={url}><p>Go to Planet</p></Link></li>
                     </ul>
                 </nav>
             </header>
