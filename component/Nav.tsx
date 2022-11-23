@@ -19,11 +19,11 @@ const Nav = () => {
                 <nav>NAV</nav>
                 <div>
                 <ul>
-                    <li> <Link></Link></li>
-                    <li> <Link></Link></li>
-                    <li> <Link></Link></li>
-                    <li> <Link></Link></li>
-                    <li> <Link></Link></li>
+                    <li> <Link>a</Link></li>
+                    <li> <Link>a</Link></li>
+                    <li> <Link>a</Link></li>
+                    <li> <Link>a</Link></li>
+                    <li> <Link>a</Link></li>
                 </ul>
                 </div>
             </header>
