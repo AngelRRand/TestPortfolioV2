@@ -13,7 +13,18 @@
 }
 
 .nav a p{
-    font-size: 1.5rem;
+    display: flex;
     text-align: center;
+    justify-items: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.navLink{
+    
+    background-color: var(--gray);
+    border: 1px solid var(--white);
+    padding: 5px;
     margin-top: 3vh;
+    border-radius: 10px;
 }
