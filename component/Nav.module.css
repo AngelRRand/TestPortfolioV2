@@ -1,7 +1,15 @@
-.nav{
+.nav {
     position: fixed;
-    top: -15px;
-    left: -15px;
+    top: 0;
     z-index: 100000;
-    color:var(--white);
+    color: var(--white);
+    min-width: 20vw;
+}
+
+.nav h3{
+    font-size: 1.5rem;
+}
+
+.nav a p{
+    font-size: 1.5rem;
 }

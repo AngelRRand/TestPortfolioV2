@@ -10,28 +10,29 @@ const Nav = () => {
     const router = useRouter()
     let currentRouter = router.asPath
     const [url, setUrl] = useState('')
-    
+
 
     useEffect(() => {
-      if(currentRouter === '/About'){
+        if (currentRouter) {
 
-      }
-    
+        }
+
     }, [currentRouter])
-    
 
 
-    if(currentRouter === '/'){
+
+    if (currentRouter === '/') {
         return <></>
-    }else{
+    } else {
         return (
-            <header className='CAJA'>
-                <nav>NAV</nav>
-                <div>
-                <ul>
-                    <li> <Link href={url}><p>VAMOS A SALTAR</p></Link></li>
-                </ul>
-                </div>
+            <header>
+                <nav className={styles.nav}>
+                    <h3>MENU</h3>
+                    <ul>
+                        <li> <Link href={'/Home'}><p>To Galaxy</p></Link></li>
+                        <li> <Link href={url}><p>Go to Planet</p></Link></li>
+                    </ul>
+                </nav>
             </header>
         )
     }
