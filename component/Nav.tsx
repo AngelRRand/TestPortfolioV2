@@ -32,7 +32,8 @@ const Nav = () => {
             <header>
                 <nav className={styles.nav}>
                     <h3 className='pointer'>MENU</h3>
-                    <ul>
+
+                    <motion.ul>
                         <li className={styles.navLink}> <Link href={'/Home'}><p>To Galaxy <Image
                             src={ligthgreen}
                             alt='Planet Terra galaxy link image'
@@ -47,7 +48,7 @@ const Nav = () => {
                             width={30}
                             height={30}
                         /></p></Link></li>
-                    </ul>
+                    </motion.ul>
                 </nav>
             </header>
         )
