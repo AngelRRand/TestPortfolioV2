@@ -33,7 +33,13 @@ const Nav = () => {
                 <nav className={styles.nav}>
                     <h3 className='pointer'>MENU</h3>
 
-                    <motion.ul>
+                    <motion.ul
+                        initial={{ opacity: 0 }}
+                        animate={{
+                            opacity: 1,
+                            transition: { duration: 0.5, type: "spring" },
+                        }}
+                    >
                         <li className={styles.navLink}> <Link href={'/Home'}><p>To Galaxy <Image
                             src={ligthgreen}
                             alt='Planet Terra galaxy link image'
