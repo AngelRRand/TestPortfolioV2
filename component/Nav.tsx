@@ -54,6 +54,13 @@ const Nav = () => {
                             width={30}
                             height={30}
                         /></p></Link></li>
+                        <li className={styles.navLink}> <Link href={url}><p>Open the map <Image
+                            src={ligthgreen}
+                            alt='Planet Terra galaxy link image'
+                            className='pointer'
+                            width={30}
+                            height={30}
+                        /></p></Link></li>
                     </motion.ul>
                 </nav>
             </header>
