@@ -1,8 +1,12 @@
-import React from 'react'
+import nutria from '../assets/NavBotton/nutria.gif';
+import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
+
+import Image from 'next/image'
+
 import { motion } from "framer-motion";
 import { currentRouter } from '../interface/types';
 
-const PhotoNutria: React.FC<currentRouter> = ({currentRouter}) => {
+const PhotoNutria: React.FC<currentRouter> = ({ currentRouter }) => {
   return (
     <motion.div
       className='container_perfil rigth_perfil'
@@ -12,10 +16,12 @@ const PhotoNutria: React.FC<currentRouter> = ({currentRouter}) => {
         transition: { duration: 3.5, type: "spring" },
       }}
     >
-      <img
+      
+      <Image
         src={currentRouter === '/House' ? nutriaSinCasco : currentRouter === '/Art' ? nutriaSinCasco : nutria}
-        alt=""
-        className='img_perfil ' />
+        alt='Home galaxy web'
+        className='img_perfil '
+      />
       <h2>Nutria</h2>
     </motion.div>
   )
