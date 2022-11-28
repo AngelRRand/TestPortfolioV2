@@ -19,7 +19,7 @@ const PhotoNutria: React.FC<currentRouter> = ({ currentRouter }) => {
       
       <Image
         src={currentRouter === '/House' ? nutriaSinCasco : currentRouter === '/Art' ? nutriaSinCasco : nutria}
-        alt='Home galaxy web'
+        alt='Avatar Nutria'
         className='img_perfil '
       />
       <h2>Nutria</h2>
