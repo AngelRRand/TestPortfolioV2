@@ -5,8 +5,9 @@ import Image from 'next/image'
 
 import { motion } from "framer-motion";
 import { currentRouter } from '../interface/types';
+import styles from './Avatars.module.css';
 
-const PhotoNutria: React.FC<currentRouter> = ({ currentRouter }) => {
+const AvatarNutria: React.FC<currentRouter> = ({ currentRouter }) => {
   return (
     <motion.div
       className='container_perfil rigth_perfil'
@@ -27,4 +28,4 @@ const PhotoNutria: React.FC<currentRouter> = ({ currentRouter }) => {
   )
 }
 
-export default PhotoNutria
+export default AvatarNutria
