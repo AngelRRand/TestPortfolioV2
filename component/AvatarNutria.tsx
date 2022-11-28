@@ -10,7 +10,7 @@ import styles from './Avatars.module.css';
 const AvatarNutria: React.FC<currentRouter> = ({ currentRouter }) => {
   return (
     <motion.div
-      className='container_perfil rigth_perfil'
+      className={`${styles.avatar_Container} ${styles.avatar_left}`}
       initial={{ opacity: 1 }}
       animate={{
         opacity: currentRouter === '/Dream' ? 0 : 1,
@@ -21,7 +21,7 @@ const AvatarNutria: React.FC<currentRouter> = ({ currentRouter }) => {
       <Image
         src={currentRouter === '/House' ? nutriaSinCasco : currentRouter === '/Art' ? nutriaSinCasco : nutria}
         alt='Avatar Nutria'
-        className='img_perfil '
+        className={styles.avatar_Img}
       />
       <h2>Nutria</h2>
     </motion.div>

@@ -1,0 +1,16 @@
+.avatar_Container{
+    position: fixed;
+    text-align: center;
+    bottom: 0vh;
+    z-index: 100;
+    color: white;
+}
+.avatar_Img{
+    width: 13vw;
+    border: 2px solid var(--black);
+    z-index: 10;
+}
+
+.avatar_left{
+    left: 0px;
+}
