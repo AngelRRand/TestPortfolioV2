@@ -1,5 +1,5 @@
-import nutria from '../assets/NavBotton/nutria.gif';
-import nutriaSinCasco from '../assets/NavBotton/nutriaSinCasco.gif';
+import nutria from '../assets/Nav/nutria.gif';
+import nutriaSinCasco from '../assets/Nav/nutriaSinCasco.gif';
 
 import Image from 'next/image'
 
