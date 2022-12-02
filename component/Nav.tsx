@@ -33,7 +33,7 @@ const Nav = () => {
             <>
             <header>
                 <nav className={styles.nav}>
-                    <h3 className='pointer'>MENU</h3>
+                    <h3 className='pointer'>MENUU</h3>
 
                     <motion.ul
                         initial={{ opacity: 0 }}
