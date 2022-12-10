@@ -3,7 +3,7 @@ import React from 'react'
 const Avatar = () => {
   return (
     <div>
-      <h1>Avatar</h1>
+      <h1>Avatarrrr</h1>
     </div>
   )
 }
