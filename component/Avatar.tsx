@@ -4,7 +4,7 @@ const Avatar = () => {
   return (
     <div>
       
-      <h1>HORACIO COMPLETA ESTOOOOOasdas</h1>
+      <h1>HORACIO COMPLETA ESTO.</h1>
     </div>
   )
 }
