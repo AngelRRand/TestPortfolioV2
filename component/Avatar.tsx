@@ -7,6 +7,8 @@ const Avatar = () => {
       <h1>VAMO MESESSI..</h1>
       <h1>VAMO MESESSI..</h1>
       <h1>VAMO MESESSI..</h1>
+      <h1>VAMO MESESSI..</h1>
+
 
 
     </div>
