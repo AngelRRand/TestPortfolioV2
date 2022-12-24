@@ -3,12 +3,7 @@ import React from 'react'
 const Avatar = () => {
   return (
     <div>
-      
-      <h1>VAMO MESESSI..</h1>
-      <h1>VAMO MESESSI..</h1>
-      <h1>VAMO MESESSI..</h1>
-      <h1>VAMO MESESSI..</h1>
-      <h1>VAMO MESESSI..</h1>
+      <h1>Feliz navidad</h1>
 
 
 
