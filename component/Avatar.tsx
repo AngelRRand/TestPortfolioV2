@@ -9,6 +9,8 @@ const Avatar = () => {
       <h1>Feliz navidad</h1>
       <h1>Feliz navidad</h1>
       <h1>Feliz navidad</h1>
+      <h1>Feliz navidad</h1>
+      <h1>Feliz navidad</h1>
     </div>
   )
 }
