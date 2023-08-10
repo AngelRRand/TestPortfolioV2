@@ -12,6 +12,7 @@
   box-sizing: border-box;
   font-family: 'PF Tempesta Seven Condensed';
   font-weight: 400;
+  
 }
 
 body {
@@ -57,25 +58,18 @@ img {
   overflow: hidden;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* IE y Edge */
+body {
+  -ms-overflow-style: none;
+}
 
 /* Firefox */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--gray) #0d1f30;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 10px;
-}
-
-*::-webkit-scrollbar-track {
-  background-color: var(--gray);
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--black);
-  border: 2px solid var(--white);
+body {
+  scrollbar-width: none;
 }
 
 /* @media all and (max-width: 768px) {

@@ -16,8 +16,59 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 
 import { motion } from 'framer-motion';
+import { useEffect } from 'react';
 
 const Home = () => {
+
+
+    useEffect(() => {
+        let scrollInterval:any;
+    
+        const scrollAmount = 50;
+    
+        const scrollUp = () => {
+          window.scroll({
+            top: window.scrollY - scrollAmount,
+            behavior: 'smooth'
+          });
+        };
+    
+        const scrollDown = () => {
+          window.scroll({
+            top: window.scrollY + scrollAmount,
+            behavior: 'smooth'
+          });
+        };
+    
+        const handleKeyDown = (e:any) => {
+          if (scrollInterval) return; 
+    
+          if (e.keyCode === 87) {
+            scrollInterval = setInterval(scrollUp, 30); // Puedes ajustar el intervalo
+          }
+    
+          if (e.keyCode === 83) {
+            scrollInterval = setInterval(scrollDown, 30); // Puedes ajustar el intervalo
+          }
+        };
+    
+        const handleKeyUp = () => {
+          if (scrollInterval) {
+            clearInterval(scrollInterval);
+            scrollInterval = null;
+          }
+        };
+    
+        window.addEventListener('keydown', handleKeyDown);
+        window.addEventListener('keyup', handleKeyUp);
+    
+        return () => {
+          window.removeEventListener('keydown', handleKeyDown);
+          window.removeEventListener('keyup', handleKeyUp);
+        };
+      }, []);
+
+
     return (
         <PageLayoud
             title='Explore my Galaxy!'
