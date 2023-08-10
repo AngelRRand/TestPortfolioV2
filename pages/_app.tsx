@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { AnimatePresence } from 'framer-motion'
-import Nav from '../component/Nav'
+import Nav from '../component/nav/Nav'
 
 export default function App({ Component, pageProps, router }: AppProps) {
   return (

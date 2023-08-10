@@ -5,20 +5,19 @@
     background: rgba(0, 0, 0, 0.397);
     color: var(--white);
     z-index: 100000;
+    h3{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    a p{
+        display: flex;
+        text-align: center;
+        justify-items: center;
+        align-items: center;
+        font-size: 1.5rem;
+    }
 }
 
-.nav h3{
-    font-size: 2.5rem;
-    text-align: center;
-}
-
-.nav a p{
-    display: flex;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
 
 .navLink{
     

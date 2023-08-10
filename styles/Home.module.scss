@@ -32,7 +32,7 @@
     z-index: 20;
 }
 
-.galaxy_grid{
+.galaxy_grid {
     display: grid;
     position: absolute;
     width: 60vw;
@@ -44,7 +44,7 @@
     grid-row-gap: 0px;
 }
 
-.home_link{
+.home_link {
     display: flex;
     text-align: center;
     align-items: center;
@@ -72,120 +72,56 @@
     display: flex;
 }
 
-.home_about{
+.home_about {
     grid-area: 16 / 6 / 12 / 6;
 }
 
-.home_education{
+.home_education {
     grid-area: 21 / 3 / 22 / 4;
 }
 
-.home_projects{
+.home_projects {
     grid-area: 7 / 6 / 8 / 7;
 }
 
-.home_networks{
+.home_networks {
     grid-area: 18 / 4 / 19 / 5;
 }
-.planetNetGit{
+
+.planetNetGit {
     display: none;
     position: absolute;
     top: 0
 }
-.home_networks:hover img:nth-child(2){
+
+.home_networks:hover img:nth-child(2) {
     display: block;
 }
-@keyframes motionT {
-    0% {
-        transform: translateX(0px);
-    }
 
-    10% {
-        transform: translateX(1px);
-    }
+@mixin motion($name, $direction: 1) {
+    @keyframes #{$name} {
+        @for $i from 0 through 5 {
+            #{$i * 10%} {
+                transform: translateX($i * $direction + px);
+            }
+        }
 
-    20% {
-        transform: translateX(2px);
-    }
+        @for $i from 5 through 0 {
+            #{(5 - $i) * 10% + 50%} {
+                transform: translateX($i * $direction + px);
+            }
+        }
 
-    30% {
-        transform: translateX(3px);
-    }
+        100%{
+            transform: translateX(0px);
+        }
 
-    40% {
-        transform: translateX(4px);
-    }
-
-    50% {
-        transform: translateX(5px);
-    }
-
-    60% {
-        transform: translateX(4px);
-    }
-
-    70% {
-        transform: translateX(3px);
-    }
-
-    80% {
-        transform: translateX(2px);
-    }
-
-    90% {
-        transform: translateX(1px);
-    }
-
-    100% {
-        transform: translateX(0px);
     }
 }
 
-@keyframes motionB {
-    0% {
-        transform: translateX(0px);
-    }
+@include motion(motionT);
 
-    10% {
-        transform: translateX(-1px);
-    }
-
-    20% {
-        transform: translateX(-2px);
-    }
-
-    30% {
-        transform: translateX(-3px);
-    }
-
-    40% {
-        transform: translateX(-4px);
-    }
-
-    50% {
-        transform: translateX(-5px);
-    }
-
-    60% {
-        transform: translateX(-4px);
-    }
-
-    70% {
-        transform: translateX(-3px);
-    }
-
-    80% {
-        transform: translateX(-2px);
-    }
-
-    90% {
-        transform: translateX(-1px);
-    }
-
-    100% {
-        transform: translateX(0px);
-    }
-}
+@include motion(motionB, -1);
 
 @media all and (max-width: 768px) {
 
@@ -193,9 +129,11 @@
         width: 95vw;
         height: 100vh;
     }
-    .galaxy{
+
+    .galaxy {
         height: 100vh;
     }
+
     .galaxy_grid {
         width: 95vw;
         height: 100vh;
@@ -203,5 +141,9 @@
         grid-template-rows: repeat(30, 3.3333vh);
     }
 
-    
+
 }
+
+
+
+
