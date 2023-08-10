@@ -34,11 +34,11 @@ const Nav = () => {
     } else {
         return (
             <>
-            <header>
-                <nav className={styles.nav}>
-                    <h3 className='pointer'>Menu</h3>
+                <header>
+                    <nav className={styles.nav}>
+                        <h3 className='pointer'>Menu</h3>
 
-                    {/* 
+                        {/* 
 
                     <motion.ul
                         initial={{ opacity: 0 }}
@@ -69,29 +69,26 @@ const Nav = () => {
                             height={30}
                         /></p></Link></li>
                     </motion.ul> 
-                    
+
                     */}
 
-                </nav>
-            </header>
+                    </nav>
+                </header>
 
-            <div className={styles.nav}>
+                    <SplashArt
+                        currentRouter={currentRouter}
+                        styleSplash='avatar_left'
+                        imgSplash={avatar}
+                        imgSplashCasco={avatar}
+                    />
 
-                <SplashArt 
-                    currentRouter={currentRouter}
-                    styleSplash={"styles.avatar_left"}
-                    imgSplash={avatar}
-                    imgSplashCasco={avatar}
-                />
+                    <SplashArt
+                        currentRouter={currentRouter}
+                        styleSplash='avatar_right'
+                        imgSplash={nutria}
+                        imgSplashCasco={nutria}
+                    />
 
-                <SplashArt 
-                    currentRouter={currentRouter}
-                    styleSplash={"styles.avatar_right"}
-                    imgSplash={nutria}
-                    imgSplashCasco={nutria}
-                />
-
-            </div>
 
             </>
         )

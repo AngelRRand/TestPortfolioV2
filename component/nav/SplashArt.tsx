@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import styles from './SplashArt.module.scss';
 import { currentRouter } from '../../interface/types';
 
-const AvatarNutria: React.FC<currentRouter> = ({ currentRouter, styleSplash, imgSplash, imgSplashCasco }) => {
+const SplashArt: React.FC<currentRouter> = ({ currentRouter, styleSplash, imgSplash, imgSplashCasco }) => {
   return (
     <motion.div
-      className={`${styles.avatar_Container} ${styleSplash}`}
+      className={`${styles.avatar_Container} ${styles[styleSplash]}`}
       initial={{ opacity: 1 }}
       animate={{
         opacity: currentRouter === '/Dream' ? 0 : 1,
@@ -25,4 +25,4 @@ const AvatarNutria: React.FC<currentRouter> = ({ currentRouter, styleSplash, img
   )
 }
 
-export default AvatarNutria
+export default SplashArt
