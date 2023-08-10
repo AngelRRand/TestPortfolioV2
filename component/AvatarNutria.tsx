@@ -1,4 +1,4 @@
-import nutria from '../assets/Nav/nutria.gif';
+import nutria from '../assets/Nav/n.gif';
 import nutriaSinCasco from '../assets/Nav/nutriaSinCasco.gif';
 
 import Image from 'next/image'

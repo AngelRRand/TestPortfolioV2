@@ -33,9 +33,9 @@ const Nav = () => {
             <>
             <header>
                 <nav className={styles.nav}>
-                    <h3 className='pointer'>MENUU</h3>
+                    <h3 className='pointer'>Menu</h3>
 
-                    <motion.ul
+                    {/* <motion.ul
                         initial={{ opacity: 0 }}
                         animate={{
                             opacity: 1,
@@ -63,12 +63,12 @@ const Nav = () => {
                             width={30}
                             height={30}
                         /></p></Link></li>
-                    </motion.ul>
+                    </motion.ul> */}
                 </nav>
             </header>
 
 
-            <AvatarNutria currentRouter={currentRouter}/>
+            {/* <AvatarNutria currentRouter={currentRouter}/> */}
             </>
         )
     }

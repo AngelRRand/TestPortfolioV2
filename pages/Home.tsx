@@ -20,7 +20,7 @@ import { motion } from 'framer-motion';
 const Home = () => {
     return (
         <PageLayoud
-            title='Explore to Galaxy!'
+            title='Explore my Galaxy!'
             content='Home portfolio'
             styleContainer='container_Galaxy'
         >
